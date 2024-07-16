@@ -1,0 +1,169 @@
+repo_name: Huntemall/securityonion-development
+report_id: ab92e460f929105a17faa45e4dda6591
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-16T10:00:10+00:00'
+requested_by: dougburks
+provider: github
+branch: dev
+detected_tools_count: 12
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/Huntemall/securityonion-development
+  detection_source: Repo Metadata
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development
+  detection_source: Repo Metadata
+- name: SQL
+  description: It is a domain-specific language used in programming
+  website_url: https://en.wikipedia.org/wiki/SQL
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/salt/playbook/files/OLD_playbook_db_init.sql
+  detection_source: salt/playbook/files/OLD_playbook_db_init.sql
+  last_updated_by: William Wernert
+  last_updated_on: 2020-10-02 18:12:23.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/.github/workflows/contrib.yml
+  detection_source: ".github/workflows/contrib.yml"
+  last_updated_by: Jason Ertel
+  last_updated_on: 2022-06-27 15:11:15.000000000 Z
+- name: NGINX
+  description: A high performance free open source web server powering busiest sites
+    on the Internet.
+  website_url: http://nginx.org
+  open_source: false
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Web Servers
+  image_url: https://img.stackshare.io/service/1052/YMxUfyWf.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/salt/nginx/etc/nginx.conf
+  detection_source: salt/nginx/etc/nginx.conf
+  last_updated_by: m0duspwnens
+  last_updated_on: 2020-01-21 21:39:42.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/salt/sensoroni/files/analyzers/spamhaus/requirements.txt
+  detection_source: salt/sensoroni/files/analyzers/spamhaus/requirements.txt
+  last_updated_by: Jason Ertel
+  last_updated_on: 2022-04-19 16:12:52.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development
+  detection_source: Repo Metadata
+- name: dnspython
+  description: DNS toolkit
+  package_url: https://pypi.org/project/dnspython
+  version: 2.2.1
+  license: Other
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20249/default_47b8ee8db82e43d9eef35923435bd8cc855f3a1b.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/salt/sensoroni/files/analyzers/spamhaus/requirements.txt
+  detection_source: salt/sensoroni/files/analyzers/spamhaus/requirements.txt
+  last_updated_by: Jason Ertel
+  last_updated_on: 2022-04-19 16:12:52.000000000 Z
+  vulnerabilities:
+  - name: Potential DoS via the Tudoor mechanism in eventlet and dnspython
+    cve_id: CVE-2023-29483
+    cve_url: https://github.com/advisories/GHSA-3rq5-2g8h-59hc
+    detected_date: Apr 13
+    severity: moderate
+    first_patched: 2.6.1
+- name: requests
+  description: Python HTTP for Humans
+  package_url: https://pypi.org/project/requests
+  version: 2.31.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19826/default_d7c684bf2673f008a9f02ac93901229297a22d7e.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/salt/sensoroni/files/analyzers/emailrep/requirements.txt
+  detection_source: salt/sensoroni/files/analyzers/emailrep/requirements.txt
+  last_updated_by: Wes
+  last_updated_on: 2023-06-01 16:26:04.000000000 Z
+  vulnerabilities:
+  - name: Requests `Session` object does not verify requests after making first request
+      with verify=False
+    cve_id: CVE-2024-35195
+    cve_url: https://github.com/advisories/GHSA-9wx4-h78v-vm56
+    detected_date: May 21
+    severity: moderate
+    first_patched: 2.32.0
+- name: python-whois
+  description: Whois querying and parsing of domain registration information
+  package_url: https://pypi.org/project/python-whois
+  version: 0.7.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/Huntemall/securityonion-development/blob/dev/salt/sensoroni/files/analyzers/malwarehashregistry/requirements.txt
+  detection_source: salt/sensoroni/files/analyzers/malwarehashregistry/requirements.txt
+  last_updated_by: Wes Lambert
+  last_updated_on: 2022-05-31 11:42:26.000000000 Z
